@@ -1,0 +1,21 @@
+body{
+  margin:0;
+  background-color: #00ff66;
+  overflow: hidden;
+}
+
+#turtle-bg{
+  background-color:#66ffff;
+  width:80vw;
+  height:80vh;
+  border:2px #6699cc groove;
+  position: absolute;
+  top:10vh;
+  left:10vw;
+}
+
+#turtleme{
+  position:absolute;
+  width:14%;
+  bottom:0%;
+}

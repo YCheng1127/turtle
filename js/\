@@ -1,0 +1,33 @@
+/*
+window.addEventListener("orientationchange",onOrientationchange,false);
+function onOrientationchange(){
+  if(window.orientation === 180 || window.orientation === 0){
+  alert("hello i m standing!");
+  document.getElementById("all").style.transform="rotate(0deg)";
+  document.getElementById("all").style.width=window.innerHeight;
+  document.getElementById("all").style.height=window.innerWidth;
+  }
+}*/
+
+var a=document.getElementById('al');
+var b=document.getElementById('be');
+var c=document.getElementById('ga');
+
+var turtle=document.getElementById("turtleme");
+turtle.style.left="45%";
+var speed=0;
+var pos=45;
+window.addEventListener('deviceorientation', function(event){
+    var alpha = event.alpha;
+    var beta = event.beta;
+    var gamma = event.gamma;
+    a.innerHTML=Math.round(alpha);
+    b.innerHTML=Math.round(beta);
+    c.innerHTML=Math.round(gamma);
+    speed=event.beta*0.1;
+    if(pos+speed<90&&pos+speed>0)
+      pos=pos+speed;
+    turtle.style.left=pos+"%";
+},false);
+
+
