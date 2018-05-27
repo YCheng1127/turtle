@@ -1,10 +1,62 @@
 body{
   margin:0;
-  background-color: #00ff66;
+  background-color: #9999ff;
   overflow: hidden;
+}
+#rules{
+  position:absolute;
+  width:100vw;
+  height:80vh;
+  top:5vh;
+  z-index:3;
+  display:block;
+}
+#gamerule{
+  position:absolute;
+  width:100%;
+  height:100%;
+  
+  }
+#start{
+  position:absolute;
+  width:14%;
+  left:55%;
+  top:60%;
+  z-index:3;
+}
+
+#startpush{
+  position:absolute;
+  width:14%;
+  left:55%;
+  top:60%;
+}
+#Timesign{
+  position:absolute;
+  font-family:fantasy;
+  display:block;
+  right:1vw;
+  top:0vh;
+}
+#Time{
+  position:absolute;
+  font-family:fantasy;
+  display:block;
+  right:1vw;
+}
+#Scoresign{
+  position:absolute;
+  font-family:fantasy;
+  display:block;
+}
+
+#Score{
+  position:absolute;
+  font-family:fantasy;
 }
 
 #turtle-bg{
+  overflow:hidden;
   background-color:#66ffff;
   width:80vw;
   height:80vh;
@@ -12,10 +64,25 @@ body{
   position: absolute;
   top:10vh;
   left:10vw;
+  display:none;
+}
+
+#bg{
+  width:100%;
+  height:100%;
+  z-index:1
 }
 
 #turtleme{
   position:absolute;
   width:14%;
   bottom:0%;
+  z-index:2;
+}
+#turtleshocked{
+  position:absolute;
+  width:14%;
+  bottom:0%;
+  z-index:3;
+  visibility:hidden;
 }
