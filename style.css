@@ -1,13 +1,13 @@
 body{
   margin:0;
-  background-color: #9999ff;
+  background-color: #99ff99;
   overflow: hidden;
 }
 #rules{
   position:absolute;
   width:100vw;
-  height:80vh;
-  top:5vh;
+  height:90vh;
+  top:6vh;
   z-index:3;
   display:block;
 }
@@ -19,17 +19,17 @@ body{
   }
 #start{
   position:absolute;
-  width:14%;
-  left:55%;
-  top:60%;
+  width:24%;
+  left:52%;
+  top:77%;
   z-index:3;
 }
 
 #startpush{
   position:absolute;
-  width:14%;
-  left:55%;
-  top:60%;
+  width:24%;
+  left:52%;
+  top:77%;
 }
 #Timesign{
   position:absolute;
@@ -85,4 +85,13 @@ body{
   bottom:0%;
   z-index:3;
   visibility:hidden;
+}
+
+#turtleback{
+  position:absolute;
+  width:10%;
+  bottom:2%;
+  right:3%;
+  z-index:6;
+  display:none;
 }
