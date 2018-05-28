@@ -84,7 +84,7 @@ var type=[];//for floatingball
 var timedroptest=0;
 function Move(){
   timecount++;
-  console.log(timecount);
+  /*console.log(timecount);*/
   
   gametime.innerHTML=Math.floor(timeconstant-timecount/60);
 
@@ -92,7 +92,7 @@ function Move(){
     pos=pos+speed;
   turtle.style.left=pos+"%";
   turtleshocked.style.left=pos+"%";
-  console.log("grow="+grow);
+  /*console.log("grow="+grow);*/
   //grow the turtle when eat flower
   if(grow==1){
     growtime=growtime+16.66667;
