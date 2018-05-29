@@ -9,6 +9,10 @@ start.addEventListener("click",function(event){
   start.style.display="none";
   begin=1;
   rules.style.display="none";
+  
+  //重新計算
+  point=0;
+  timeconstant=61;
 },false)
 //detect if the button is pressed, if pressed begin==1, then the gamefunction start
 var run=requestAnimationFrame(rungame);
@@ -270,9 +274,11 @@ var dropbomb=function(ball,turtle,i){
 } 
 }//end if
 run=requestAnimationFrame(rungame);
+/*時間到後停止偵測遊戲開始，因為要可以繼續玩所以先關掉
 if(begin==2){
   cancelAnimationFrame(rungame); 
-}
+}*/
+
 }//end
 
 turtleback.addEventListener("click",function(event){
